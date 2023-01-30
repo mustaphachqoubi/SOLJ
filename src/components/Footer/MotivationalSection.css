@@ -1,0 +1,75 @@
+.Msection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.motivational {
+  text-align: center;
+}
+
+.motivational_sentence {
+  font-size: large;
+}
+
+.motivational_description {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Msection_btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  
+}
+
+.btn {
+  width: 8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.watch_demo {
+  border: 1.5px solid lightgray;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.watch_demo:hover {
+  border: 1.5px solid black;
+}
+
+.get_started {
+  border: 1.5px solid transparent;
+  background: black;
+  color: white;
+}
+.get_started:hover {
+  color: black;
+  background-color: transparent;
+  border: 1.5px solid black;
+}
+
+@media screen and (max-width: 500px) {
+  .Msection_btns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .btn {
+    width: 100%;
+  }
+}

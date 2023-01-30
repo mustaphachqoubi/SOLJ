@@ -1,0 +1,54 @@
+.job {
+    border: 2px solid black;
+    padding: 1rem;
+    position: relative;
+    transition: 0.3s all ease;
+    margin-bottom: 1.5rem;
+  }
+  .job:hover {
+    box-shadow: 10px 10px black;
+  }
+  
+  .job_title:hover {
+    cursor: pointer;
+  }
+  .job__expression {
+    font-weight: normal;
+    font-size: normal;
+  }
+  
+  .job__status {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .js {
+    border: 2px solid black;
+    padding: 0 1.4rem;
+    height: 2rem;
+    border-radius: 4rem;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .apply {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem
+  }
+  .apply:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+  
+  .arrow {
+    font-size: 1rem;
+  }
