@@ -4,6 +4,7 @@
     position: relative;
     transition: 0.3s all ease;
     margin-bottom: 1.5rem;
+    border-radius: 0.3rem;
   }
   .job:hover {
     box-shadow: 10px 10px black;
@@ -51,4 +52,19 @@
   
   .arrow {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    .job__expression{
+      font-size: 1rem;
+    }
+    .apply{
+      display: none;
+    }
+    .job{
+      text-align: center;
+    }
+    .job__status{
+      justify-content: center;
+    }
   }

@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
         <MotivationalSection />
         <div className='footer'>
-        <div class="logo">
+        <div className="logo">
           <div>S</div>
           <div className="searchIcon">
             <FaSearch />

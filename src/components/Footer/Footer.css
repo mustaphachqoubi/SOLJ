@@ -31,4 +31,7 @@ footer{
         flex-direction: column;
         gap: 1rem;
     }
+    .rights{
+      text-align: center;
+    }
 }

@@ -1,122 +1,129 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4rem;
-  }
-  .logo-list {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: start;
-  }
-  
-  .logo:hover :nth-child(2) {
-    transform: rotate(41.5deg);
-    transition: 0.1s all ease-in-out;
-  }
-  .logo :nth-child(2) {
-    padding-top: 0.2rem;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.logo-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.link-menu {
+  font-size: 0.7rem;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: start;
+}
+
+.logo:hover :nth-child(2) {
+  transform: rotate(41.5deg);
+  transition: 0.1s all ease-in-out;
+}
+.logo :nth-child(2) {
+  padding-top: 0.2rem;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.7rem;
+}
+
+.list-item {
+  cursor: pointer;
+}
+
+.menu-list {
+  border: 2px solid black;
+  padding: 2rem;
+  border-radius: 0.3rem;
+  /* display: none; */
+  position: absolute;
+  top: 5rem;
+  right: 1.5rem;
+  text-align: center;
+  background: white;
+  z-index: 2;
+}
+
+.menu-list-reg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.menu-list-item {
+  cursor: pointer;
+}
+
+.registeration {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.register {
+  width: 4.5rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+
+.signup {
+  background: black;
+  color: white;
+}
+.signup:hover {
+  background: none;
+  color: black;
+  border: 2px solid black;
+}
+
+.login {
+  background: none;
+}
+.login:hover {
+  background: black;
+  color: white;
+}
+
+.menu {
+  display: none;
+  border: 2px solid transparent;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
   .list {
-    display: flex;
-    gap: 1rem;
-    font-size: 0.7rem;
-  }
-  
-  .list-item {
-    cursor: pointer;
-  }
-  
-  .menu-list {
-    border: 2px solid black;
-    padding: 2rem;
-    border-radius: 0.3rem;
     display: none;
-    position: absolute;
-    top: 5rem;
-    right: 1.5rem;
-    text-align: center;
-    background: white;
-    z-index: 2;
   }
-  
-  .menu-list-reg{
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem
-  }
-  
-  .menu-list-item {
-    cursor: pointer;
-  }
-  
   .registeration {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .register {
-    width: 4.5rem;
-    height: 2rem;
-    border-radius: 0.3rem;
-    border: none;
-    font-weight: bold;
-    transition: 0.3s all ease-in-out;
-    cursor: pointer;
-  }
-  
-  .signup {
-    background: black;
-    color: white;
-  }
-  .signup:hover {
-    background: none;
-    color: black;
-    border: 2px solid black;
-  }
-  
-  .login {
-    background: none;
-  }
-  .login:hover {
-    background: black;
-    color: white;
-  }
-  
-  .menu {
     display: none;
-    border: 2px solid transparent;
-    padding: 0.3rem;
-    border-radius: 0.3rem;
-    font-size: 1.6rem;
   }
-  .menu:hover {
-    cursor: pointer;
-    border: 2px solid black;
+  .menu {
+    display: flex;
   }
-  
-  @media screen and (max-width: 700px) {
-    .list {
-      display: none;
-    }
-    .registeration {
-      display: none;
-    }
-    .menu {
-      display: flex;
-    }
-    .menu-list {
-      /* display: block; */
-      display: none;
-    }
+  .menu-list {
+    /* display: block; */
+    /* display: none; */
   }
+}

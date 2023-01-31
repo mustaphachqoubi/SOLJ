@@ -1,15 +1,28 @@
+import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Job from "./components/Job/Job";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Chart from "./components/Chart/Chart";
+import analytics from "./firebase";
 
 function App() {
 
+  useEffect(() => {
+    console.log(process.env.NODE_ENV)
+  })
+
   return (
     <div className="app">
+      <BrowserRouter>
       <Navbar />
-      <Job />
+      <Routes>
+      <Route path="/" element={<Job />} />
+      <Route path="/chart" element={<Chart />} />
+      </Routes>
       <Footer />
+      </BrowserRouter>
     </div>
   );
 }
