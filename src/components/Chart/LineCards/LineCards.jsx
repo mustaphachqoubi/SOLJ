@@ -4,8 +4,8 @@ import "./LineCards.css";
 const LineCards = ({ to }) => {
   return (
     <div className="lineCards">
-      {to}
       <div className="lineCard">
+      {to}
         <div className="line"></div>
       </div>
     </div>

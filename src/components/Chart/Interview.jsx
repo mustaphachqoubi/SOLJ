@@ -3,7 +3,7 @@ import Card from './Card/Card'
 
 const Interview = () => {
   return (
-    <Card classname={'interview card'} text={'Interview'} />
+    <Card classname={' card'} text={'Interview'} type={'interview'} />
   )
 }
 

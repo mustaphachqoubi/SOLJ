@@ -3,7 +3,7 @@ import Card from './Card/Card'
 
 const Reject = () => {
   return (
-    <Card classname={'reject card'} text={'Rejected'} />
+    <Card classname={' card'} text={'Rejected'} type={'reject'} />
   )
 }
 

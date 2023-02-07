@@ -1,21 +1,33 @@
-.line{
+.line {
+  /* height: 10rem;
+    width: 2px; */
+  height: 0.1rem;
+  width: 20rem;
+  background: #cbd5e1;
+}
+
+.lineCards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+@media screen and (max-width: 600px) {
+  .line {
     height: 10rem;
     width: 2px;
-    background: #cbd5e1;
-}
-
-.lineCards{
-    display: flex;
+  }
+  .lineCard{
     flex-direction: column;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    justify-content: center;
-}
-
-.lineCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+  }
 }

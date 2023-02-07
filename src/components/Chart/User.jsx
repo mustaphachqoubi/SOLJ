@@ -1,11 +1,10 @@
 import React from 'react'
 import Card from './Card/Card'
 
-const USER = 'Mustapha'
 
-const User = () => {
+const User = ({ text, type }) => {
   return (
-    <Card classname={'user card'} text={USER === '' ? 'Anonymous' : USER} />
+    <Card classname={'card'} text={text === '' ? 'Anonymous' : text} type={type}/>
   )
 }
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from './Card/Card'
 
-const Company = () => {
+const Company = ({text, type}) => {
   return (
-    <Card classname={'company card'} text={'AIOX-Labs'} />
+    <Card classname={'card'} text={text} type={type}/>
   )
 }
 
