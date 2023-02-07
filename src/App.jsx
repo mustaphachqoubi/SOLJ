@@ -5,13 +5,8 @@ import Job from "./components/Job/Job";
 import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chart from "./components/Chart/Chart";
-import analytics from "./firebase";
 
 function App() {
-
-  useEffect(() => {
-    console.log(process.env.NODE_ENV)
-  })
 
   return (
     <div className="app">

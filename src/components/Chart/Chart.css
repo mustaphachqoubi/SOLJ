@@ -1,0 +1,15 @@
+.cards{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+}

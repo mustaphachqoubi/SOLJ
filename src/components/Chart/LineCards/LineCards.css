@@ -1,0 +1,21 @@
+.line{
+    height: 10rem;
+    width: 2px;
+    background: #cbd5e1;
+}
+
+.lineCards{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+}
+
+.lineCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}

@@ -17,7 +17,7 @@ footer{
     display: flex;
     align-items: start;
   }
-  
+
   .logo:hover :nth-child(2) {
     transform: rotate(41.5deg);
     transition: 0.1s all ease-in-out;

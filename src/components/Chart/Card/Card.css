@@ -1,0 +1,81 @@
+.card {
+  width: 100%;
+}
+
+.user {
+  border: 1.5px solid #64748b;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background: #64748b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
+.company {
+  border: 1.5px solid #3b82f6;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
+.interview {
+  border: 1.5px solid #6366f1;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #6366f1;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
+.reject {
+  border: 1.5px solid #ef4444;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #ef4444;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
+.accept {
+  border: 1.5px solid #22c55e;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #22c55e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
+
+.call {
+  border: 1.5px solid #eab308;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: #eab308;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
+}
