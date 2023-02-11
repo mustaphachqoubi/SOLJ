@@ -1,6 +1,7 @@
 import React from "react";
 import "./MotivationalSection.css";
 import {AiFillPlayCircle} from 'react-icons/ai'
+import { Link } from "react-router-dom";
 
 const MotivationalSection = () => {
   return (
@@ -18,7 +19,9 @@ const MotivationalSection = () => {
             <AiFillPlayCircle />
             Watch demo
             </div>
+        <Link to="/signup">
         <div className="get_started btn">Get started</div>
+        </Link>
       </div>
     </div>
   );

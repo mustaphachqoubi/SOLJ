@@ -17,8 +17,9 @@ const Card = ({
   const [isToolTipOpen, setIsToolTipOpen] = useState(false)
   return (
     <div className="card_tooltip_container">
-      <div className={classname} onMouseOver={() => setIsToolTipOpen(true)} onMouseOut={() => setIsToolTipOpen(false)}>{text}</div>
+      <div className={classname} onClick={() => isToolTipOpen === false ? setIsToolTipOpen(true) : setIsToolTipOpen(false)}>{text}</div>
       <div className="tooltip" style={isToolTipOpen === false ? {display: 'none'} : {display:'flex'}}>
+        <div className="sign"></div>
         {type === "company" ? (
           <div>
             <h3 className="title">company name: {text}</h3>

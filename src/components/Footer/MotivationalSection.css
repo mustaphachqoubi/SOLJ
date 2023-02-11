@@ -58,6 +58,9 @@
   background: black;
   color: white;
 }
+a{
+  text-decoration: none;
+}
 .get_started:hover {
   color: black;
   background-color: transparent;
