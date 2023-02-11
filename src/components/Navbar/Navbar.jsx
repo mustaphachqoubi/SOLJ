@@ -27,8 +27,12 @@ const Navbar = () => {
         </div>
       </div>
       <div className="registeration">
+        <Link to="/login">
         <button className="login register">Log in</button>
+        </Link>
+        <Link to="/signup">
         <button className="signup register">Sign up</button>
+        </Link>
       </div>
       <div className="menu" onClick={() => {
         toggle === 'none' ? setToggle('block') : setToggle('none')

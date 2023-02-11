@@ -1,55 +1,68 @@
-.signUp{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.signUp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    gap: 2rem;
+.signup_form {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+  padding: 1rem;
+  width: 100%;
+  gap: 2rem;
 }
 
-input{
-    padding: 0 1rem;
-    width: 20rem;
-    height: 2.5rem;
-    border-radius: 0.3rem;
-    border: 2px solid black
-}
-input:focus{
-    outline: none
-}
-
-h4{
-    font-size: 0.8rem;
-}
-
-.signup_btn{
-    width: 6rem;
-    height: 2.5rem;
-    border: transparent;
-    background: black;
-    color: white;
-    font-weight: bold;
-    border-radius: 0.3rem;
-    cursor: pointer;
+.form_element{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.signup_btn:hover{
-    background: none;
-    border: 2px solid black;
-    color: black;
+    max-width: 20rem;
 }
 
-.login_anchor{
-    color: black;
-    font-weight: bold;
+input {
+  padding: 0 1rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+  border: 2px solid black;
+  
 }
-.login_anchor:hover{
-    text-decoration: underline;
+input:focus {
+  outline: none;
+}
+
+.signup_btn {
+  width: 6rem;
+  height: 2.5rem;
+  border: transparent;
+  background: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup_btn:hover {
+  background: none;
+  border: 2px solid black;
+  color: black;
+}
+
+.login_anchor {
+  color: black;
+  font-weight: bold;
+}
+.login_anchor:hover {
+  text-decoration: underline;
+}
+
+.have_account{
+    text-align: center;
 }

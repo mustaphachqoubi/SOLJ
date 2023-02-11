@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Job from "./components/Job/Job";
@@ -6,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chart from "./components/Chart/Chart";
 import SignUp from "./components/Register/Signup/SignUp";
+import Login from './components/Register/Login/Login'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Route path="/" element={<Job />} />
           <Route path="/chart" element={<Chart />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

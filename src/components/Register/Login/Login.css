@@ -1,0 +1,21 @@
+.login_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.dont_have_account{
+    text-align: center;
+}
+
+.signup_anchor{
+    font-weight: bold;
+    color: black;
+}
+.signup_anchor:hover{
+    text-decoration: underline;
+}
