@@ -3,10 +3,10 @@ import MotivationalSection from './MotivationalSection'
 import './Footer.css'
 import { FaSearch } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({isWantToRegester}) => {
   return (
     <footer>
-        <MotivationalSection />
+      {isWantToRegester === false && <MotivationalSection />}
         <div className='footer'>
         <div className="logo">
           <div>S</div>

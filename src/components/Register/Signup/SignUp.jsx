@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import "./SignUp.css";
 import { Link } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
+import { useEffect } from "react";
 
-const SignUp = () => {
+const SignUp = ({seIsWantToRegestert}) => {
   const [isClicked, setIsClicked] = useState(false);
   const [loaderColor, setLoaderColor] = useState("#FFF");
+  useEffect(() => {
+    seIsWantToRegestert(true)
+  }, [])
   return (
     <div className="signUp">
       <form action="" method="post" className="signup_form">

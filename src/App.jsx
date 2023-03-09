@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Job from "./components/Job/Job";
@@ -8,17 +9,18 @@ import SignUp from "./components/Register/Signup/SignUp";
 import Login from './components/Register/Login/Login'
 
 function App() {
+  const [isWantToRegester, seIsWantToRegestert] = useState(false)
   return (
     <div className="app">
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Job />} />
-          <Route path="/chart" element={<Chart />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Job seIsWantToRegestert={seIsWantToRegestert}/>} />
+          <Route path="/chart" element={<Chart seIsWantToRegestert={seIsWantToRegestert} isWantToRegester={isWantToRegester}/>} />
+          <Route path="/signup" element={<SignUp seIsWantToRegestert={seIsWantToRegestert}/>} />
+          <Route path="/login" element={<Login seIsWantToRegestert={seIsWantToRegestert}/>} />
         </Routes>
-        <Footer />
+        <Footer isWantToRegester={isWantToRegester}/>
       </BrowserRouter>
     </div>
   );

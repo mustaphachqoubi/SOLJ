@@ -2,9 +2,9 @@ import React from 'react'
 import Card from './Card/Card'
 
 
-const User = ({ text, type }) => {
+const User = ({ text, type, isWantToRegester}) => {
   return (
-    <Card classname={'card'} text={text === '' ? 'Anonymous' : text} type={type}/>
+    <Card classname={'card'} text={text === '' || isWantToRegester === false ? 'Anonymous' : text} type={type}/>
   )
 }
 

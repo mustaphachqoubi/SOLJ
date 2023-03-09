@@ -1,11 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Login.css";
 import { Link } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 
-const Login = () => {
+const Login = ({ seIsWantToRegestert }) => {
   const [isClicked, setIsClicked] = useState(false);
   const [loaderColor, setLoaderColor] = useState("#FFF");
+
+  useEffect(() => {
+    seIsWantToRegestert(true);
+  }, []);
+
   return (
     <div className="log_in">
       <form action="" method="post" className="login_form">

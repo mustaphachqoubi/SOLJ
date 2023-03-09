@@ -1,9 +1,12 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./Job.css";
 import Jobs from "../../dummy";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 
-const Job = () => {
+const Job = ({seIsWantToRegestert}) => {
+  useEffect(() => {
+    seIsWantToRegestert(false)
+  }, [])
   return (
     <>
       {Jobs.map((job) => (
