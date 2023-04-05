@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chart from "./components/Chart/Chart";
 import SignUp from "./components/Register/Signup/SignUp";
 import Login from './components/Register/Login/Login'
+import UnderDevelopment from "./components/UnderDevelopment";
 
 function App() {
   const [isWantToRegester, seIsWantToRegestert] = useState(false)
@@ -19,6 +20,7 @@ function App() {
           <Route path="/chart" element={<Chart seIsWantToRegestert={seIsWantToRegestert} isWantToRegester={isWantToRegester}/>} />
           <Route path="/signup" element={<SignUp seIsWantToRegestert={seIsWantToRegestert}/>} />
           <Route path="/login" element={<Login seIsWantToRegestert={seIsWantToRegestert}/>} />
+          <Route path="/underdevelopment" element={<UnderDevelopment/>} />
         </Routes>
         <Footer isWantToRegester={isWantToRegester}/>
       </BrowserRouter>

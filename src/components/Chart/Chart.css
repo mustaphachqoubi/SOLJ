@@ -1,29 +1,48 @@
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2.1rem;
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.1rem;
+}
+
+.companyCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.user {
+  border-radius: 20px;
+}
+
+.svg {
+  width: 50%;
+}
+
+.svgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@keyframes animateSvg {
+  0%{
+
+  }
+  100%{
     
-}
-
-.companyCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-}
-
-.c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.user{
-    border-radius: 20px;
+  }
 }
